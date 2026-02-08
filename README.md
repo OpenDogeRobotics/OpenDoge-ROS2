@@ -1,6 +1,7 @@
 # DM-IMU-ROS2
 
-一个基于 ROS 2 的 IMU 采集与发布示例，包含两套实现：
+适配达妙IMU（别问哪款IMU了，达妙只有一款IMU）  
+基于 ROS 2 的 IMU 采集与发布示例，包含两套实现：
 
 - 传统节点实现：直接打开串口、解析数据帧，并发布 `sensor_msgs/Imu` 与位姿话题
 - `ros2_control` 硬件插件：实现 `hardware_interface::SensorInterface`，通过 IMU Sensor Broadcaster 发布标准 IMU 状态
@@ -184,4 +185,5 @@ IMU Sensor Broadcaster 会根据硬件导出的状态接口发布标准 IMU 消�
 
 - 维护者：见 `package.xml`
 - 许可：当前占位（`TODO`）；请根据实际项目选择并更新
+
 
